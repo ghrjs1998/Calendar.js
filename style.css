@@ -1,8 +1,104 @@
-td {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-    border: 2px;
-    border-color: black;
-}
+ 
+    body {
+        margin-top: 100px;
+        margin-left: 500px;
+        justify-content: center;
+        align-items: center;
+      }
+        
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 840px;
+      }
+      
+      .year-month {
+        font-size: 45px;
+        font-weight: bold;
+        padding-left: 300px;
+      }
+      
+      .nav {
+        display: flex;
+        border: 1px solid #000000;
+        border-radius: 3px;
+      }
+      
+      
+      .days {
+        width: 800px;
+        padding: 15px;
+        display: flex;
+        margin: 25px 0 10px;
+      }
+      
+      .day {
+        font-size: large;
+        width: calc(100%/7);
+        text-align: center;
+        font-weight: bold;
+      }
+      .daySat {
+        font-size: large;
+        width: calc(100%/7);
+        text-align: center;
+        color:blue;
+        font-weight: bold;
+      }
+      .daySun {
+        font-size: large;
+        width: calc(100%/7);
+        text-align: center;
+        color:red;
+        font-weight: bold;
+      }
+      
+      .dates {
+        padding: 15px;
+        display: flex;
+        flex-flow: row wrap;
+        height: 500px;
+        width: 800px;
+        border-top: 3px solid;
+        border-left: 3px solid;
+        border-bottom: 3px solid;
+        border-right: 3px solid;
+        padding-top: 45px;
+        
+      }
+    
+      .nav-btn-go-today {
+        color: #000000;
+        width: 75px;
+        font-weight: bold;
+      }
+    
+      .nav-btn-go-prev{
+        width: 35px;
+        font-weight: bold;
+      }
+    
+      .nav-btn-go-next{
+        width: 35px;
+        font-weight: bold;
+      }
+    
+      .nav-btn-go-next-sixmonth{
+        width: 35px;
+        font-weight: bold;
+      }
+    
+      .nav-btn-go-prev-sixmonth{
+        width: 35px;
+        font-weight: bold;
+        }
+      .nav-btn-go-next-year{
+        width: 35px;
+        font-weight: bold;
+      }
+    
+       .nav-btn-go-prev-year{
+         width: 35px;
+         font-weight: bold;
+        }

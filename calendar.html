@@ -8,32 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--구조 잡기-->
+<!--달력구조 잡기-->
     <div class="calendar">
-        <div class="calendar-header">
-            <!--년도 생성-->
+        <!-- 현재 달 & 이전/다음달 이동-->
+        <div class="header">
+            <!--월 변경 되는 부분-->
             <div class="year-month"></div>
             <!--이전 오늘 다음 버튼만들기 html 특수코드 사용-->
             <div class="nav">
-                <button class="nav-btn go-prev">&lt;</button>
-                <button class="nav-btn go-today">Today</button>
-                <button class="nav-btn go-next">&gt;</button>
+                <button class="nav-btn-go-prev-year" onclick="prevYear()"><<</button>
+                <button class="nav-btn-go-prev-six-month" onclick="prevSixMonth()">6<</button>
+                <button class="nav-btn-go-prev" onclick="prevMonth()">&lt;</button>
+                <button class="nav-btn-go-today" onclick="today()">Today</button>
+                <button class="nav-btn-go-next" onclick="nextMonth()">&gt;</button>
+                <button class="nav-btn-go-next-six-month" onclick="nextSixMonth()">6></button>
+                <button class="nav-btn-go-next-year" onclick="nextYear()">>></button>
             </div>
         </div>
     </div>
+    <!--이번달 날짜-->
     <div class="main">
         <!--요일 생성-->
         <div class="days">
-            <div class="day">일</div>
-            <div class="day">월</div>
-            <div class="day">화</div>
-            <div class="day">수</div>
-            <div class="day">목</div>
-            <div class="day">금</div>
-            <div class="day">토</div>
+            <div class="daySun">Sun</div>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="daySat">Sat</div>
         </div>
-        <div class="dates"></div>
+        <!--날짜생성-->
+        <div class="dates">
+            
+        </div>
+        
     </div>
+    <!--js파일 연결-->
     <script src="calendar.js"></script>
 </body>
 </html>
